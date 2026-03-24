@@ -21,12 +21,12 @@ Entre no terminal com o comando:
 cd myapp\logs
 ```
 
-Nesse diretório crie um arquivo chamado myapp-backend.log
+Nesse diretório crie um arquivo chamado ```myapp-backend.log```:
 
 ```bash
 touch myapp-backend.log
 ```
-Entre no arquivo com o editor nano:
+Entre no arquivo com um editor de texto:
 
 ```bash
 nano myapp-backend.log
@@ -66,4 +66,48 @@ Adicione as seguintes linhas no arquivo:
 2024-09-03 10:30:00 INFO: User admin logged in from IP 10.0.0.2.
 2024-09-03 11:00:00 INFO: Application settings updated by user: admin.
 2024-09-03 12:00:00 ERROR: SENSITIVE_DATA: Database backup contains sensitive information.
+```
+
+Crie um outro arquivo chamado ```myapp-frontend.log```:
+
+```bash
+touch myapp-frontend.log
+```
+
+Acesse esse outro arquivo com um editor de texto e adicione as seguintes linhas:
+```bash
+nano myapp-frontend.log
+```
+
+```log
+2024-09-01 10:05:21 INFO: Frontend initialized successfully.
+2024-09-01 10:15:00 ERROR: Failed to load user profile for user ID 12345.
+2024-09-01 10:20:10 INFO: SENSITIVE_DATA: User email: user@example.com fetched profile data.
+2024-09-01 10:30:45 INFO: User admin navigated to dashboard.
+2024-09-01 11:05:00 INFO: SENSITIVE_DATA: Session token for user admin is active.
+2024-09-01 11:30:00 ERROR: SENSITIVE_DATA: Failed login attempt for username: admin.
+2024-09-01 12:00:00 INFO: User admin logged out successfully.
+2024-09-01 13:00:00 INFO: Frontend rendering completed for page: /adoption.
+2024-09-01 14:15:30 ERROR: SENSITIVE_DATA: Credit card information exposed in logs.
+2024-09-01 15:00:00 INFO: Application theme switched to dark mode by user admin.
+2024-09-02 09:30:00 INFO: SENSITIVE_DATA: User password changed for user ID 67890.
+2024-09-02 10:00:00 ERROR: Unable to fetch data from the API: 500 Internal Server Error.
+2024-09-02 11:45:00 INFO: User logged in with username: guest.
+2024-09-02 12:30:00 INFO: SENSITIVE_DATA: User session initiated with token: TOKEN1234.
+2024-09-02 13:00:00 ERROR: Invalid token used for API request.
+2024-09-03 08:15:00 INFO: User admin updated account settings.
+2024-09-03 09:00:00 ERROR: SENSITIVE_DATA: User IP 10.0.0.3 accessed sensitive endpoint.
+2024-09-03 10:30:00 INFO: SENSITIVE_DATA: API key for external service accessed.
+2024-09-03 11:00:00 INFO: User admin logged out successfully.
+2024-09-03 12:00:00 INFO: Frontend performance metrics collected.
+```
+
+Crie arquivos vazios chamados ```app.config``` e ```relatorio.txt```.
+
+```bash
+touch app.config
+```
+
+```bash
+touch relatorio.txt
 ```
