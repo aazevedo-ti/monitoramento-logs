@@ -12,13 +12,13 @@ Caso utilize algum sistema operacional baseado em Linux, como o Ubuntu ou o macO
 Abra o terminal, e crie um diretório chamado ```myapp/logs```:
 
 ```bash
-mkdir -p myapp\logs
+mkdir -p myapp/logs
 ```
 
 Entre no terminal com o comando:
 
 ```bash
-cd myapp\logs
+cd myapp/logs
 ```
 
 Nesse diretório crie um arquivo chamado ```myapp-backend.log```:
