@@ -26,11 +26,12 @@ Nesse diretório crie um arquivo chamado myapp-backend.log
 ```bash
 touch myapp-backend.log
 ```
-Adicione o seguinte conteúdo:
+Entre no arquivo com o editor nano:
 
 ```bash
-nano myapp\logs
+nano myapp-backend.log
 ```
+Adicione as seguintes linhas no arquivo:
 
 ```log
 2024-09-01 10:05:21 ERROR: Database connection failed.
