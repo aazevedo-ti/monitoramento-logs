@@ -102,7 +102,7 @@ nano myapp-frontend.log
 2024-09-03 12:00:00 INFO: Frontend performance metrics collected.
 ```
 
-Crie arquivos vazios chamados ```app.config``` e ```relatorio.txt```.
+Crie arquivos vazios chamados ```app.config``` e ```relatorio.txt```:
 
 ```bash
 touch app.config
@@ -110,4 +110,31 @@ touch app.config
 
 ```bash
 touch relatorio.txt
+```
+Crie no terminal uma outra pasta chamada ```scripts-linux```:
+
+```bash
+mkdir scripts-linux
+```
+
+Acesse a pasta:
+
+```bash
+cd scripts-linux
+```
+
+Abra em um editor de texto o arquivo de script chamado ```monitoramento-logs.sh```:
+
+```bash
+nano monitoramento-logs.sh
+```
+
+Adicione as primeiras linhas no script:
+
+```bash
+#!/bin/bash
+
+LOG_DIR="../myapp/logs"
+
+echo "Verificando logs no diretorio $LOG_DIR"
 ```
