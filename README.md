@@ -138,3 +138,20 @@ LOG_DIR="../myapp/logs"
 
 echo "Verificando logs no diretorio $LOG_DIR"
 ```
+
+Atribua as permissões no script de monitoramento:
+
+```bash
+chmod 755 monitoramento-logs.sh
+```
+
+Realize a execução do script:
+
+```bash
+./monitoramento-logs.sh 
+```
+
+Saída:
+```logs
+Verificando logs no diretorio ../myapp/logs
+```
