@@ -9,7 +9,7 @@ Caso utilize algum sistema operacional baseado em Linux, como o Ubuntu ou o macO
 
 ## Projeto
 
-Abra o terminal, e crie um diretório chamado myapp/logs
+Abra o terminal, e crie um diretório chamado ```myapp/logs```:
 
 ```bash
 mkdir -p myapp\logs
