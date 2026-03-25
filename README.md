@@ -161,3 +161,20 @@ Verificando logs no diretorio ../myapp/logs
 
 # Fazendo busco e usando filtros
 
+No script ```monitoramento-logs.sh``` adicione as seguintes linhas abaixo:
+
+```bash
+find $LOG_DIR -name "*.log" -print0 | while IFS= read -r -d '' arquivo; do
+        echo "Arquivo encontrado $arquivo"
+done
+```
+
+O script acima procura pelos arquivos com a extensão .log no sistema e retorna com os nomes dos arquivos encontrados.
+
+Ao executar o script ```bash ./monitoramento-logs.sh``` exibe a seguinte saída:
+
+```log
+Verificando logs no diretorio ../myapp/log
+Arquivo encontrado ../myapp/log/myapp-backend.log
+Arquivo encontrado ../myapp/log/myapp-frontend.log
+```
