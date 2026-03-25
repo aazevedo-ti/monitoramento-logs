@@ -33,7 +33,7 @@ nano myapp-backend.log
 ```
 Adicione as seguintes linhas no arquivo:
 
-```log
+```bash
 2024-09-01 10:05:21 ERROR: Database connection failed.
 2024-09-01 10:06:10 INFO: Retrying database connection...
 2024-09-01 10:07:35 ERROR: Database connection failed.
@@ -79,7 +79,7 @@ Acesse esse outro arquivo com um editor de texto e adicione as seguintes linhas:
 nano myapp-frontend.log
 ```
 
-```log
+```bash
 2024-09-01 10:05:21 INFO: Frontend initialized successfully.
 2024-09-01 10:15:00 ERROR: Failed to load user profile for user ID 12345.
 2024-09-01 10:20:10 INFO: SENSITIVE_DATA: User email: user@example.com fetched profile data.
@@ -155,7 +155,7 @@ Realize a execução do script:
 ```
 
 Saída:
-```logs
+```text
 Verificando logs no diretorio ../myapp/logs
 ```
 
@@ -173,7 +173,7 @@ O script acima procura pelos arquivos com a extensão .log no sistema e retorna 
 
 Ao executar o script ```./monitoramento-logs.sh``` exibe a seguinte saída:
 
-```log
+```text
 Verificando logs no diretorio ../myapp/log
 Arquivo encontrado ../myapp/log/myapp-backend.log
 Arquivo encontrado ../myapp/log/myapp-frontend.log
