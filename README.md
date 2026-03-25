@@ -171,7 +171,7 @@ done
 
 O script acima procura pelos arquivos com a extensão .log no sistema e retorna com os nomes dos arquivos encontrados.
 
-Ao executar o script ```bash ./monitoramento-logs.sh``` exibe a seguinte saída:
+Ao executar o script ```./monitoramento-logs.sh``` exibe a seguinte saída:
 
 ```log
 Verificando logs no diretorio ../myapp/log
