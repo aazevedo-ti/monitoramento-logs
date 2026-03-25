@@ -67,6 +67,7 @@ Adicione as seguintes linhas no arquivo:
 2024-09-03 11:00:00 INFO: Application settings updated by user: admin.
 2024-09-03 12:00:00 ERROR: SENSITIVE_DATA: Database backup contains sensitive information.
 ```
+# Configuração do script
 
 Crie um outro arquivo chamado ```myapp-frontend.log```:
 
