@@ -9,16 +9,16 @@ Caso utilize algum sistema operacional baseado em Linux, como o Ubuntu ou o macO
 
 ## Projeto
 
-Abra o terminal, e crie um diretório chamado ```myapp/logs```:
+Abra o terminal, e crie um diretório chamado ```myapp/log```:
 
 ```bash
-mkdir -p myapp/logs
+mkdir -p myapp/log
 ```
 
 Entre no terminal com o comando:
 
 ```bash
-cd myapp/logs
+cd myapp/log
 ```
 
 Nesse diretório crie um arquivo chamado ```myapp-backend.log```:
@@ -158,3 +158,6 @@ Saída:
 ```logs
 Verificando logs no diretorio ../myapp/logs
 ```
+
+# Fazendo busco e usando filtros
+
