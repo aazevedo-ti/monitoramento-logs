@@ -178,3 +178,66 @@ Verificando logs no diretorio ../myapp/log
 Arquivo encontrado ../myapp/log/myapp-backend.log
 Arquivo encontrado ../myapp/log/myapp-frontend.log
 ```
+
+Retornar ao diretório raiz:
+
+```
+bash
+cd
+```
+
+Acessar o seguinte diretório ```myapp/log``` e listar os arquivos dentro do diretório:
+
+```bash
+cd myapp/log
+```
+
+```bash
+ls
+```
+
+Exibir o seguinte arquivo ```myapp-backend.log```:
+
+```bash
+cat myapp-backend.log
+```
+
+As seguintes linhas contém mensagens de erro e informações sensíveis como senha:
+
+[Ver mensagens de erro](myapp/log/myapp-backend.log)
+
+No script de monitoramento, adicionaremos abaixo do comando de busca os filtros para capturar mensagens de erro e informações sensíveis, e na linha que contém senha em texto claro, substituir pela palavra "REDACTED":
+
+[Ver alteraçoes](https://github.com/aazevedo-ti/monitoramento-logs/blob/main/monitoramento-logs.sh#L15)
+
+Salvar o arquivo ```monitoramento-logs.sh``` e a seguir executar o script.
+
+```bash
+./monitoramento-logs.sh
+```
+
+Retornar novamente ao diretório ```myapp/log``` e listar os arquivos:
+
+```bash
+cd ../../myapp/log
+```
+
+```bash
+ls
+```
+
+Repare que foram gerados dois novos arquivos: ```myapp-backend.log.filtrado``` e ```myapp-frontend.log.filtrado```
+
+Exibir os arquivos:
+
+```bash
+cat myapp-backend.log.filtrado
+```
+[Ver logs filtrados](myapp/log/myapp-backend.log.filtrado)
+
+```bash
+cat myapp-frontend.log.filtrado
+```
+[Ver mensagens de erro](myapp/log/myapp-frontend.log.filtrado)
+
+
