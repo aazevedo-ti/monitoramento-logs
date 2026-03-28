@@ -159,7 +159,7 @@ Saída:
 Verificando logs no diretorio ../myapp/logs
 ```
 
-# Fazendo busco e usando filtros
+# Fazendo busca e usando filtros
 
 No script ```monitoramento-logs.sh``` adicione as seguintes linhas abaixo:
 
