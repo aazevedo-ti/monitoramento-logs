@@ -15,4 +15,5 @@ find $LOG_DIR -name "*.log" -print0 | while IFS= read -r -d '' arquivo; do
         sed -i 's/User session initiated with token: .*/User session initiated with token: REDACTED/g' "${arquivo}.filtrado"
 
         sort "${arquivo}.filtrado" -o "${arquivo}.filtrado"
+        uniq "${arquivo}.filtrado" > "${arquivo}.unico"
 done
