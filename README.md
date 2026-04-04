@@ -240,4 +240,30 @@ cat myapp-frontend.log.filtrado
 ```
 [Ver mensagens de erro](myapp/log/myapp-frontend.log.filtrado)
 
+# Lidando com arquivos
+
+O arquivo de monitoramento está com algumas linhas desajustadas e fora de ordem. Para organizar, use o seguinte comando no terminal:
+
+```bash
+sort myapp-backend.log.filtrado
+```
+
+Repare que no arquivo são ajustados a data e a hora em ordem crescente. 
+
+Vamos adicionar o comando ao script de monitoramento e executar o script para gerar um novo arquivo com as linhas ajustadas e unificadas.
+
+[Ver alteraçoes](https://github.com/aazevedo-ti/monitoramento-logs/blob/main/monitoramento-logs.sh#L15)
+
+```bash
+cat myapp-backend.log.unico
+```
+[Ver logs ordenados](myapp/log/myapp-backend.log.unico)
+
+```bash
+cat myapp-frontend.log.unico
+```
+[Ver logs ordenados](myapp/log/myapp-frontend.log.unico)
+
+
+
 
